@@ -8,11 +8,18 @@ html_content = '''
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Wayne Mansion Private Gallery</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset='UTF-8'>
+    <title>Wayen Mansion Private Gallery</title>
+    <link rel='stylesheet' href='style.css'>
 </head>
 <body>
-    <h1 class="main-title">THE GOTHAM ARCHIVE</h1> <div class="gallery">
+    <h1 class='main-title'>THE GOTHAM ARCHIVE</h1>
+
+    <div class='search-container'>
+        <input type='text' id='searchInput' placeholder='输入电影名或排名进行搜索......'>
+    </div>
+
+    <div class='gallery'>
 '''
 
 for f in files:
@@ -21,6 +28,7 @@ for f in files:
 
 html_content += f'''
     </div>
+    <script src='script.js'></script>
 </body>
 </html>
 '''

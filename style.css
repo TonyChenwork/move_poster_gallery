@@ -49,3 +49,27 @@ body {
     color: #ffffff;
     text-shadow: 0 0 20px rgba(255,255,255,0.2); /* 给文字加一层淡淡的、像屏幕发光一样的光晕 */
 }
+
+.search-container{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#searchInput{
+    width: 300px;
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    color: #807646c2;
+    border-radius: 25px;
+    transition: all 0.3s;
+    outline: none;
+} 
+
+#searchInput:focus {
+    width: 450px;
+    background-color: #222;
+    border-color: #555;
+    box-shadow: 0 0 15px rgba(255,255,255,0.2)
+}
